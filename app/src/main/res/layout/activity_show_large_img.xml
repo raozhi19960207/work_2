@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.example.administrator.searchpicturetool.widght.PinchImageViewPager
+            android:id="@+id/large_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linearlayout_img"
+            />
+
+        <RelativeLayout
+            android:id="@+id/linearlayout_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            >
+
+            <TextView
+                android:id="@+id/large_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="3/48"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                />
+            <ImageView
+                android:id="@+id/large_more"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_large_more_selector"
+                />
+
+            <ImageView
+                android:id="@+id/large_share"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_toLeftOf="@+id/large_more"
+                android:padding="2dp"
+                android:src="@drawable/ic_large_share_selector"
+                />
+
+            <ImageView
+                android:id="@+id/large_download"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_toLeftOf="@+id/large_share"
+                android:src="@drawable/ic_large_downlod_selectot"
+                />
+            <ImageView
+                android:id="@+id/large_star"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_toLeftOf="@+id/large_download"
+                android:src="@drawable/ic_large_star_selector"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
